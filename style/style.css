@@ -1,0 +1,152 @@
+body {
+  background-color: #f9f7f6 !important;
+}
+
+.multilineTruncate {
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  display: -moz-box;
+  text-overflow: -o-ellipsis-lastline;
+  position: relative;
+}
+
+.main-width {
+  max-width: 980px;
+  margin-right: none;
+  margin-left: none;
+  margin: auto;
+}
+
+/* Search Bar styles */
+
+.search-bar {
+  background-color: #7C7C7C;
+  padding: 5px 0;
+}
+
+.search-bar__item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.search-bar .search-bar__term-input,
+.search-bar .search-bar__sort,
+.search-bar .search-bar__submit-btn {
+  color: #fff;
+  font-size: 14px;
+  height: 35px;
+}
+
+.search-bar .search-bar__term-input,
+.search-bar .search-bar__sort {
+  background-color: #4A4A4A;
+  border-color: #4A4A4A;
+}
+
+.search-bar .search-bar__submit-btn {
+  background-color: #e60000;
+  border: #e60000;
+}
+
+.search-bar .search-bar__submit-btn:hover,
+.search-bar .search-bar__submit-btn:focus,
+.search-bar .search-bar__submit-btn:active {
+  background-color: #b30000;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .search-bar {
+    height: 55px;
+  }
+}
+
+
+/* Article section styles */
+.article-section {
+  padding: 0 15px;
+}
+
+/* Article block styles */
+.article__block {
+  margin-top: 40px;
+  background-color: #fff;
+}
+
+.article__image-section {
+  height: 40%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article__image {
+  width: 100%;
+}
+
+.article__content {
+  padding: 15px;
+}
+
+.article__block .article__button {
+  background-color: #4A4A4A;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .article__block {
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .article__content {
+    padding: 30px;
+  }
+
+  .article__title {
+    -webkit-line-clamp: 3;
+    -moz-line-clamp: 3;
+    max-height: 90px;
+  }
+
+  .article__description {
+    -webkit-line-clamp: 4;
+    -moz-line-clamp: 4;
+    max-height: 96px;
+  }
+
+  .article__block .article__button {
+    position: absolute;
+    bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .article__block {
+    height: 600px;
+  }
+
+  .article__image-section {
+    height: 40%;
+  }
+
+  .article__content {
+    padding: 40px;
+  }
+
+  .article__title {
+    -webkit-line-clamp: 4;
+    -moz-line-clamp: 4;
+    max-height: 120px;
+  }
+
+  .article__block .article__button {
+    bottom: 40px;
+  }
+}
